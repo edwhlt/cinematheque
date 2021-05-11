@@ -1,3 +1,10 @@
+<!--
+  ~ Copyright (c) 2021.
+  ~ Project: Cinémathèque
+  ~ Author: Edwin HELET & Julien GUY
+  ~ Class: logback.xml
+  -->
+
 <configuration debug="true">
 
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">

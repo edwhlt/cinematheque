@@ -1,8 +1,8 @@
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
  Copyright (c) 2021.
- Project: Projet 2A
+ Project: Cinémathèque
  Author: Edwin HELET & Julien GUY
- Class: FormActionEntry.java
+ Class: FormActionEntry
  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 package fr.hedwin.swing.panel.utils.form;

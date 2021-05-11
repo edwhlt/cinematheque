@@ -1,8 +1,8 @@
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
  Copyright (c) 2021.
- Project: Projet 2A
+ Project: Cinémathèque
  Author: Edwin HELET & Julien GUY
- Class: TMDB.java
+ Class: TMDB
  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 package fr.hedwin.db;
@@ -13,7 +13,6 @@ import fr.hedwin.db.model.SerieSortBy;
 import fr.hedwin.db.object.*;
 import fr.hedwin.db.utils.CompletableFuture;
 import fr.hedwin.db.utils.Future;
-import fr.hedwin.swing.IHM;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

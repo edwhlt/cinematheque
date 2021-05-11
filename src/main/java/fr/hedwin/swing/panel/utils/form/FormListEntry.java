@@ -1,20 +1,18 @@
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
  Copyright (c) 2021.
- Project: Projet 2A
+ Project: Cinémathèque
  Author: Edwin HELET & Julien GUY
- Class: FormListEntry.java
+ Class: FormListEntry
  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 package fr.hedwin.swing.panel.utils.form;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.function.Function;
-import java.util.function.IntFunction;
 
 public class FormListEntry<T> extends FormEntry<T, List<T>> {
 

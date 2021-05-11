@@ -1,13 +1,12 @@
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
  Copyright (c) 2021.
- Project: Projet 2A
+ Project: Cinémathèque
  Author: Edwin HELET & Julien GUY
- Class: MultipleResultPanel.java
+ Class: MultipleResultPanel
  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 package fr.hedwin.swing.panel.result;
 
-import fr.hedwin.db.Results;
 import fr.hedwin.db.model.IdElement;
 import fr.hedwin.db.model.TmdbElement;
 import fr.hedwin.swing.IHM;

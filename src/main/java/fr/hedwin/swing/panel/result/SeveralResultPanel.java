@@ -1,20 +1,18 @@
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
  Copyright (c) 2021.
- Project: Projet 2A
+ Project: Cinémathèque
  Author: Edwin HELET & Julien GUY
- Class: SeveralResultPanel.java
+ Class: SeveralResultPanel
  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 package fr.hedwin.swing.panel.result;
 
 import com.formdev.flatlaf.extras.FlatSVGIcon;
+import fr.hedwin.db.Results;
 import fr.hedwin.db.model.IdElement;
 import fr.hedwin.db.model.TmdbElement;
-import fr.hedwin.db.object.DbMovie;
-import fr.hedwin.db.object.DbSerie;
-import fr.hedwin.db.utils.Future;
-import fr.hedwin.db.Results;
 import fr.hedwin.db.object.ResultsPage;
+import fr.hedwin.db.utils.Future;
 import fr.hedwin.swing.IHM;
 import fr.hedwin.swing.other.LoadDataBar;
 import fr.hedwin.swing.panel.result.properties.ResultPanelReturn;

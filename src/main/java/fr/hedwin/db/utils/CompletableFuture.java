@@ -1,16 +1,16 @@
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
  Copyright (c) 2021.
- Project: Projet 2A
+ Project: Cinémathèque
  Author: Edwin HELET & Julien GUY
- Class: CompletableFuture.java
+ Class: CompletableFuture
  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 package fr.hedwin.db.utils;
 
+import fr.hedwin.utils.fonctional.ThrowableConsumer;
+
 import java.util.concurrent.Callable;
 import java.util.function.Consumer;
-
-import fr.hedwin.utils.fonctional.ThrowableConsumer;
 
 public class CompletableFuture<V> implements Future<V> {
 

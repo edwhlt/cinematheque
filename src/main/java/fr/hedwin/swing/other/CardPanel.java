@@ -1,27 +1,20 @@
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
  Copyright (c) 2021.
- Project: Projet 2A
+ Project: Cinémathèque
  Author: Edwin HELET & Julien GUY
- Class: CardPanel.java
+ Class: CardPanel
  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 package fr.hedwin.swing.other;
 
 import com.formdev.flatlaf.extras.FlatSVGIcon;
-import fr.hedwin.db.TMDB;
-import fr.hedwin.db.utils.CompletableFuture;
-import fr.hedwin.db.utils.Future;
-import fr.hedwin.swing.panel.result.ResultElementPanel;
 import fr.hedwin.utils.StringTraitement;
-import javafx.scene.layout.Border;
 
 import javax.swing.*;
 import java.awt.*;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.function.Consumer;
 import java.util.function.Function;
-import java.util.function.Supplier;
 
 public class CardPanel<T> extends JPanel {
 

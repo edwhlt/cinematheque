@@ -1,8 +1,8 @@
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
  Copyright (c) 2021.
- Project: Projet 2A
+ Project: Cinémathèque
  Author: Edwin HELET & Julien GUY
- Class: Table.java
+ Class: Table
  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 package fr.hedwin.swing.panel.utils.table;
@@ -13,8 +13,11 @@ import javax.swing.*;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import java.awt.*;
-import java.util.*;
 import java.util.List;
+import java.util.*;
+import java.util.function.BiFunction;
+import java.util.function.Function;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 public class Table<T> extends JPanel {
@@ -150,6 +153,11 @@ public class Table<T> extends JPanel {
             return 0;
         }).collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (x, y) -> y, LinkedHashMap::new));
         sortButton.reverseSortMode();
+
+        Function<String, String> funt = (string) -> "abcd";
+        BiFunction<String, String, String> funt2 = (str1, st2) -> "abcd";
+        Supplier<String> supplier = () -> "abcd";
+
         rows.values().forEach(Row::remove);
         rows.clear();
         map.forEach((k, v) -> {

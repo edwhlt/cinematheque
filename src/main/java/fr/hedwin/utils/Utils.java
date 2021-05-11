@@ -1,8 +1,8 @@
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
  Copyright (c) 2021.
- Project: Projet 2A
+ Project: Cinémathèque
  Author: Edwin HELET & Julien GUY
- Class: Utils.java
+ Class: Utils
  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 package fr.hedwin.utils;
@@ -11,7 +11,6 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.formdev.flatlaf.extras.FlatSVGIcon;
-import fr.hedwin.Main;
 import fr.hedwin.db.Results;
 import fr.hedwin.db.TMDB;
 import fr.hedwin.db.model.MovieSortBy;
@@ -20,8 +19,8 @@ import fr.hedwin.db.model.TmdbElement;
 import fr.hedwin.db.object.*;
 import fr.hedwin.exceptions.ResultException;
 import fr.hedwin.swing.IHM;
-import fr.hedwin.swing.other.jlist.RequestListForm;
 import fr.hedwin.swing.other.LoadDataBar;
+import fr.hedwin.swing.other.jlist.RequestListForm;
 import fr.hedwin.swing.panel.SearchPanel;
 import fr.hedwin.swing.panel.result.MultipleResultPanel;
 import fr.hedwin.swing.panel.result.ResultElementPanel;
@@ -35,7 +34,6 @@ import fr.hedwin.swing.panel.utils.table.Table;
 import fr.hedwin.swing.window.ResultsDialog;
 import fr.hedwin.swing.window.TableDialog;
 import fr.hedwin.swing.window.TrailerDialog;
-import jdk.nashorn.internal.scripts.JD;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

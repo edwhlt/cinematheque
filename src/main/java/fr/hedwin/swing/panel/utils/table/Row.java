@@ -1,8 +1,8 @@
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
  Copyright (c) 2021.
- Project: Projet 2A
+ Project: Cinémathèque
  Author: Edwin HELET & Julien GUY
- Class: Row.java
+ Class: Row
  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 package fr.hedwin.swing.panel.utils.table;
@@ -11,10 +11,9 @@ import fr.hedwin.utils.StringTraitement;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.*;
+import java.util.LinkedHashMap;
 import java.util.List;
-
-import static fr.hedwin.utils.Utils.getTitleElement;
+import java.util.Map;
 
 public class Row<T> {
 

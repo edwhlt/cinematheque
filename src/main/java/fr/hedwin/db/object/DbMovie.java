@@ -1,8 +1,8 @@
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
  Copyright (c) 2021.
- Project: Projet 2A
+ Project: Cinémathèque
  Author: Edwin HELET & Julien GUY
- Class: DbMovie.java
+ Class: DbMovie
  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 package fr.hedwin.db.object;
@@ -13,7 +13,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import fr.hedwin.db.Results;
 import fr.hedwin.db.TMDB;
 import fr.hedwin.db.model.IdElement;
-import fr.hedwin.db.model.TmdbElement;
 import fr.hedwin.db.utils.Future;
 
 import java.util.List;

@@ -1,8 +1,8 @@
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
  Copyright (c) 2021.
- Project: Projet 2A
+ Project: Cinémathèque
  Author: Edwin HELET & Julien GUY
- Class: IHM.java
+ Class: IHM
  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 package fr.hedwin.swing;
@@ -17,16 +17,16 @@ import fr.hedwin.db.utils.CompletableFuture;
 import fr.hedwin.db.utils.Future;
 import fr.hedwin.objects.Movie;
 import fr.hedwin.objects.User;
+import fr.hedwin.swing.other.LoadDataBar;
+import fr.hedwin.swing.panel.Cinematheque;
+import fr.hedwin.swing.panel.SearchPanel;
 import fr.hedwin.swing.panel.result.MultipleResultPanel;
+import fr.hedwin.swing.panel.result.properties.ResultPanelReturn;
 import fr.hedwin.swing.panel.utils.form.Form;
 import fr.hedwin.swing.panel.utils.form.FormActionEntry;
 import fr.hedwin.swing.panel.utils.form.FormSingleEntry;
 import fr.hedwin.swing.window.FormDialog;
 import fr.hedwin.swing.window.ResultsDialog;
-import fr.hedwin.swing.other.LoadDataBar;
-import fr.hedwin.swing.panel.*;
-import fr.hedwin.swing.panel.result.properties.ResultPanelReturn;
-import fr.hedwin.utils.RoundImage;
 import fr.hedwin.utils.Utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

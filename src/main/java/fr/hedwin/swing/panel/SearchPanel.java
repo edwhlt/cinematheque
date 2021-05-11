@@ -1,29 +1,32 @@
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
  Copyright (c) 2021.
- Project: Projet 2A
+ Project: Cinémathèque
  Author: Edwin HELET & Julien GUY
- Class: SearchPanel.java
+ Class: SearchPanel
  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 package fr.hedwin.swing.panel;
 
+import fr.hedwin.db.TMDB;
+import fr.hedwin.db.model.IdElement;
 import fr.hedwin.db.model.MovieSortBy;
 import fr.hedwin.db.model.SerieSortBy;
-import fr.hedwin.db.model.IdElement;
 import fr.hedwin.db.model.TmdbElement;
+import fr.hedwin.db.object.DbMovie;
 import fr.hedwin.db.object.DbSerie;
 import fr.hedwin.db.object.Genre;
 import fr.hedwin.db.utils.Future;
-import fr.hedwin.db.TMDB;
-import fr.hedwin.db.object.DbMovie;
 import fr.hedwin.objects.Movie;
 import fr.hedwin.swing.IHM;
 import fr.hedwin.swing.other.jlist.ListCategorie;
 import fr.hedwin.swing.other.jlist.RequestListForm;
 import fr.hedwin.swing.panel.result.ResultPanel;
-import fr.hedwin.swing.panel.utils.form.*;
-import fr.hedwin.swing.window.FormDialog;
 import fr.hedwin.swing.panel.result.properties.ResultPanelReturn;
+import fr.hedwin.swing.panel.utils.form.Form;
+import fr.hedwin.swing.panel.utils.form.FormActionEntry;
+import fr.hedwin.swing.panel.utils.form.FormListEntry;
+import fr.hedwin.swing.panel.utils.form.FormSingleEntry;
+import fr.hedwin.swing.window.FormDialog;
 import fr.hedwin.utils.Utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,7 +34,8 @@ import org.slf4j.LoggerFactory;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
-import java.util.*;
+import java.util.Date;
+import java.util.UUID;
 
 import static fr.hedwin.utils.Utils.getPanelResult;
 

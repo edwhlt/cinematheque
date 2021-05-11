@@ -1,16 +1,16 @@
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
  Copyright (c) 2021.
- Project: Projet 2A
+ Project: Cinémathèque
  Author: Edwin HELET & Julien GUY
- Class: RequestListForm.java
+ Class: RequestListForm
  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 package fr.hedwin.swing.other.jlist;
 
 import fr.hedwin.swing.IHM;
+import fr.hedwin.swing.panel.utils.form.Form;
 import fr.hedwin.swing.panel.utils.form.FormActionEntry;
 import fr.hedwin.swing.panel.utils.form.FormEntry;
-import fr.hedwin.swing.panel.utils.form.Form;
 import fr.hedwin.utils.fonctional.Callable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

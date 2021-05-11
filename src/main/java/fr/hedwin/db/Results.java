@@ -1,14 +1,13 @@
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
  Copyright (c) 2021.
- Project: Projet 2A
+ Project: Cinémathèque
  Author: Edwin HELET & Julien GUY
- Class: Results.java
+ Class: Results
  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 package fr.hedwin.db;
 
 import fr.hedwin.db.model.TmdbElement;
-import fr.hedwin.db.object.DbMovie;
 import fr.hedwin.db.object.ResultsPage;
 import fr.hedwin.db.utils.CompletableFuture;
 import fr.hedwin.db.utils.Future;

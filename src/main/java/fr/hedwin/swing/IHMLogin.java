@@ -1,8 +1,8 @@
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
  Copyright (c) 2021.
- Project: Projet 2A
+ Project: Cinémathèque
  Author: Edwin HELET & Julien GUY
- Class: IHMLogin.java
+ Class: IHMLogin
  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 package fr.hedwin.swing;
@@ -10,7 +10,6 @@ package fr.hedwin.swing;
 import com.fasterxml.jackson.core.type.TypeReference;
 import fr.hedwin.Main;
 import fr.hedwin.db.utils.CompletableFuture;
-import fr.hedwin.objects.Comment;
 import fr.hedwin.objects.Movie;
 import fr.hedwin.objects.User;
 import fr.hedwin.swing.other.LoadDataBar;
@@ -24,10 +23,8 @@ import org.slf4j.LoggerFactory;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
-import java.io.IOException;
-import java.util.*;
+import java.util.Map;
+import java.util.UUID;
 
 public class IHMLogin extends JFrame {
 

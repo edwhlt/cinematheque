@@ -1,15 +1,15 @@
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
  Copyright (c) 2021.
- Project: Projet 2A
+ Project: Cinémathèque
  Author: Edwin HELET & Julien GUY
- Class: ResultElementPanel.java
+ Class: ResultElementPanel
  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 package fr.hedwin.swing.panel.result;
 
+import fr.hedwin.db.TMDB;
 import fr.hedwin.db.model.NamedIdElement;
 import fr.hedwin.db.utils.CompletableFuture;
-import fr.hedwin.db.TMDB;
 import fr.hedwin.swing.other.LoadDataBar;
 import fr.hedwin.utils.StringTraitement;
 
