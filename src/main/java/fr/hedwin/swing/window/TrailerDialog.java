@@ -11,6 +11,9 @@ import com.teamdev.jxbrowser.browser.Browser;
 import com.teamdev.jxbrowser.engine.Engine;
 import com.teamdev.jxbrowser.engine.EngineOptions;
 import com.teamdev.jxbrowser.view.swing.BrowserView;
+import fr.hedwin.Main;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.swing.*;
 import java.awt.*;
@@ -25,8 +28,10 @@ import static com.teamdev.jxbrowser.engine.RenderingMode.HARDWARE_ACCELERATED;
 
 public class TrailerDialog extends JDialog {
 
-    public static void launchTrailer(Window parent, String title, String youtubeId){
+    private static final Logger logger = LoggerFactory.getLogger(TrailerDialog.class);
+    public static String LICENSE = getLicenseKey();
 
+    public static void launchTrailer(Window parent, String title, String youtubeId){
         new TrailerDialog(parent, title, youtubeId);
     }
 
@@ -35,19 +40,22 @@ public class TrailerDialog extends JDialog {
         generate(youtubeId);
     }
 
-    private void generate(String youtubeId){
+    private static String getLicenseKey(){
         String license = null;
         try (InputStream input = new FileInputStream("config.properties")) {
             Properties prop = new Properties();
             prop.load(input);
             license = prop.getProperty("jxBrowserLicense");
-            System.out.println(license);
+            logger.info("JxBrowserLicense: "+license);
         } catch (IOException ex) {
             ex.printStackTrace();
         }
         if(license == null) license = "1BNDHFSC1FZ18NPW81L23QYLBV875KQF21EQI2YAQQZ78LGFU7T176KTPRNSC9BCX627ZR";
+        return license;
+    }
 
-        Engine engins = Engine.newInstance(EngineOptions.newBuilder(HARDWARE_ACCELERATED).licenseKey(license).build());
+    private void generate(String youtubeId){
+        Engine engins = Engine.newInstance(EngineOptions.newBuilder(HARDWARE_ACCELERATED).licenseKey(LICENSE).build());
         Browser browser = engins.newBrowser();
         browser.navigation().loadUrl("https://www.youtube.com/embed/"+youtubeId);
         BrowserView view = BrowserView.newInstance(browser);
