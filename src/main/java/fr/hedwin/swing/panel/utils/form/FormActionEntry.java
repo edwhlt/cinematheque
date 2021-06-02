@@ -28,6 +28,7 @@ public class FormActionEntry extends FormEntry<Void, Callable> {
 
     public FormActionEntry(String label, Callable callable, Consumer<Throwable> error) {
         super(label, null, null, s -> callable, r -> true);
+
         this.error = error;
         initComponents();
         updateValue.accept(callable);

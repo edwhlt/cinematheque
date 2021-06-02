@@ -209,7 +209,7 @@ public class IHM extends JFrame {
     public void closeIHM() {
         Object[] choices = new Object[]{"Oui", "Non", "Annuler"};
         int i = JOptionPane.showOptionDialog(getContentPane(), "Sauvegarder les données ?", "Fermeture de l'application", JOptionPane.YES_NO_CANCEL_OPTION,
-                JOptionPane.WARNING_MESSAGE, null, choices, choices[0]
+                JOptionPane.WARNING_MESSAGE, null, choices, choices[2]
         );
         if (i == 0) {
             try {
@@ -293,15 +293,15 @@ public class IHM extends JFrame {
             movie = new Movie(dbSerie.getId(), dbSerie.getName(), btn_group.getValue(), new Date());
         }
         if(movie != null) {
-            IHM.INSTANCE.addMovie(UUID.randomUUID(), movie);
-            IHM.INSTANCE.addNotifCinematheque();
+            addMovie(UUID.randomUUID(), movie);
+            addNotifCinematheque();
         }
     }
 
     public void createMovie(FormSingleEntry<String> formEntrie, FormSingleEntry<Movie.Format> btn_group) throws Exception {
         Movie movie = new Movie(formEntrie.getValue(), btn_group.getValue(), new Date());
-        IHM.INSTANCE.addMovie(UUID.randomUUID(), movie);
-        IHM.INSTANCE.addNotifCinematheque();
+        addMovie(UUID.randomUUID(), movie);
+        addNotifCinematheque();
     }
 
     public void addMovie(UUID uuid, Movie movie) {
